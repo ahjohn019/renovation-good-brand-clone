@@ -73,7 +73,7 @@
         </div>
       </div>
       <div
-        class="mt-14 flex flex-col justify-between items-center border-t border-white/10 pt-8 sm:flex-row"
+        class="mt-14 flex flex-col gap-4 justify-between items-center border-t border-white/10 pt-8 sm:flex-row"
       >
         <div class="flex gap-6">
           <div class="flex items-center gap-6">Follow Us</div>
