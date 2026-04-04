@@ -46,7 +46,7 @@
                 Schedule a free consultation and get expert guidance for your home project.
               </div>
             </div>
-            <a href="">
+            <a href="https://wa.me/60123693499" target="_blank" rel="noopener noreferrer">
               <img
                 src="../assets/whatsapp_icon.svg"
                 alt="WhatsApp Icon"
