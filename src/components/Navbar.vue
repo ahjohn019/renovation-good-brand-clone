@@ -21,7 +21,7 @@ const setActiveLink = (href: string) => {
 
 <template>
   <nav
-    class="sticky top-0 left-0 right-0 w-full h-16 lg:h-20 bg-white flex justify-between items-center px-6"
+    class="sticky top-0 left-0 right-0 w-full h-16 lg:h-20 bg-white flex justify-between items-center px-6 z-[1000]"
   >
     <!-- Logo -->
     <div class="flex items-center">
