@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import QuoteButton from './QuoteButton.vue'
 
 const activeLink = ref('#home')
 
@@ -20,7 +21,7 @@ const setActiveLink = (href: string) => {
 
 <template>
   <nav
-    class="sticky top-0 left-0 right-0 w-full h-[70px] bg-white flex justify-between items-center px-8 md:px-5 z-[1000]"
+    class="sticky top-0 left-0 right-0 w-full h-16 lg:h-20 bg-white flex justify-between items-center px-6"
   >
     <!-- Logo -->
     <div class="flex items-center">
@@ -43,13 +44,7 @@ const setActiveLink = (href: string) => {
           {{ link.name }}
         </a>
       </nav>
-      <a
-        href="#"
-        class="text-black inline-flex items-center justify-center gap-2 rounded-full bg-[#ffc247] px-6 py-2.5 text-sm font-medium transition-colors hover:bg-yellow-400 cursor-pointer"
-      >
-        Get a Free Quote
-        <i class="fa-solid fa-arrow-right"></i>
-      </a>
+      <QuoteButton />
     </div>
   </nav>
 </template>
