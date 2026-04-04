@@ -6,10 +6,10 @@ const MIN_DRAG_THRESHOLD = 50
 const DRAG_THRESHOLD_RATIO = 0.15
 
 const images = ref([
-  { src: 'slider_image_one.jpg' },
-  { src: 'slider_image_two.jpg' },
-  { src: 'slider_image_three.jpg' },
-  { src: 'slider_image_four.jpg' }
+  { src: new URL('../assets/slider_image_one.jpg', import.meta.url).href },
+  { src: new URL('../assets/slider_image_two.jpg', import.meta.url).href },
+  { src: new URL('../assets/slider_image_three.jpg', import.meta.url).href },
+  { src: new URL('../assets/slider_image_four.jpg', import.meta.url).href }
 ])
 
 const visibleCount = ref(3)
@@ -185,7 +185,7 @@ onUnmounted(() => {
         >
           <div class="w-full aspect-[4/3] overflow-hidden rounded-2xl">
             <img
-              :src="`../src/assets/${item.src}`"
+              :src="item.src"
               class="w-full h-full object-cover pointer-events-none"
               width="800"
               height="600"

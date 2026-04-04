@@ -1,12 +1,31 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+
 const workingBrandImages = ref([
-  { src: 'bina_group_berhad_brand.png', alt: 'Bina Group Berhad' },
-  { src: 'golden_land_brand.png', alt: 'Golden Land Brand' },
-  { src: 'haily_group_brand.png', alt: 'Haily Group Brand' },
-  { src: 'mah_sing_brand.png', alt: 'Mah Sing Brand' },
-  { src: 'newfields_brand.png', alt: 'New Fields Brand' },
-  { src: 'pinnacle_brand.svg', alt: 'Pinnacle Brand' }
+  {
+    src: new URL('../assets/bina_group_berhad_brand.png', import.meta.url).href,
+    alt: 'Bina Group Berhad'
+  },
+  {
+    src: new URL('../assets/golden_land_brand.png', import.meta.url).href,
+    alt: 'Golden Land Brand'
+  },
+  {
+    src: new URL('../assets/haily_group_brand.png', import.meta.url).href,
+    alt: 'Haily Group Brand'
+  },
+  {
+    src: new URL('../assets/mah_sing_brand.png', import.meta.url).href,
+    alt: 'Mah Sing Brand'
+  },
+  {
+    src: new URL('../assets/newfields_brand.png', import.meta.url).href,
+    alt: 'New Fields Brand'
+  },
+  {
+    src: new URL('../assets/pinnacle_brand.svg', import.meta.url).href,
+    alt: 'Pinnacle Brand'
+  }
 ])
 </script>
 
@@ -21,7 +40,7 @@ const workingBrandImages = ref([
           class="flex items-center justify-center rounded-lg bg-white p-3"
         >
           <img
-            :src="`../src/assets/${brand.src}`"
+            :src="brand.src"
             :alt="brand.alt"
             width="144"
             height="64"
