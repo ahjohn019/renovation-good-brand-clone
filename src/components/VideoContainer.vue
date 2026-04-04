@@ -4,7 +4,7 @@ import QuoteButton from './QuoteButton.vue'
 </script>
 
 <template>
-  <div class="relative">
+  <div class="relative h-[100dvh] overflow-hidden">
     <video
       :src="videoSrc"
       autoplay

@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import { ref, watch, onUnmounted } from 'vue'
+import { ref, watch, onMounted, onUnmounted } from 'vue'
 import QuoteButton from './QuoteButton.vue'
 
 const activeLink = ref('#home')
 const isMobileMenuOpen = ref(false)
+const DESKTOP_BREAKPOINT = 1024
 
 const navBarLinkClasses = 'transition-colors text-sm font-medium cursor-pointer flex items-center'
 
@@ -32,7 +33,18 @@ watch(isMobileMenuOpen, (isOpen) => {
   document.body.style.overflow = isOpen ? 'hidden' : ''
 })
 
+const handleWindowResize = () => {
+  if (window.innerWidth >= DESKTOP_BREAKPOINT && isMobileMenuOpen.value) {
+    closeMobileMenu()
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('resize', handleWindowResize)
+})
+
 onUnmounted(() => {
+  window.removeEventListener('resize', handleWindowResize)
   document.body.style.overflow = ''
 })
 </script>

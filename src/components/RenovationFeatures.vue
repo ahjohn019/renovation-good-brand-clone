@@ -7,7 +7,7 @@ import WhyUsButton from './WhyUsButton.vue'
     class="bg-white text-black text-left py-20 md:py-28 grid items-stretch overflow-hidden md:grid-cols-2"
   >
     <div
-      class="order-2 px-6 py-8 text-center md:order-1 md:py-14 md:text-left md:pl-[max(.5rem,calc((100vw-90rem)/2+.5rem))] md:pr-8 lg:pl-[max(1rem,calc((100vw-90rem)/2+1rem))]"
+      class="order-2 px-6 py-8 text-center md:order-1 md:py-14 md:text-left md:pl-[max(1.5rem,calc((100vw-90rem)/2+1.5rem))] md:pr-8 lg:pl-[max(2rem,calc((100vw-90rem)/2+2rem))]"
     >
       <div class="text-3xl font-bold leading-tight text-black md:text-4xl lg:text-[42px]">
         Renovation <br />

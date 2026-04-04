@@ -11,7 +11,7 @@ const workingBrandImages = ref([
 </script>
 
 <template>
-  <div class="container mt-10 px-4 md:px-6">
+  <div class="mx-auto mt-10 w-full max-w-7xl">
     <div class="mb-4 text-center text-sm font-bold tracking-wide text-black/60">Working With :</div>
     <div class="mx-auto rounded-2xl bg-white px-4 py-6 sm:px-6 md:px-8">
       <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
