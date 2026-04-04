@@ -4,7 +4,7 @@ import AchievementSlider from './AchievementSlider.vue'
 </script>
 
 <template>
-  <div class="bg-white py-20 md:py-28 px-4 md:px-6 lg:px-0">
+  <div class="bg-white py-20 md:py-28 px-4 md:px-6">
     <div class="max-w-7xl mx-auto">
       <div
         class="mb-12 grid gap-6 text-center font-bold md:grid-cols-[minmax(0,1fr)_auto] md:items-end md:text-left"

@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-black pt-16 pb-8">
+  <footer class="bg-black pt-16 pb-8 px-4 md:px-6">
     <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-0">
       <img
         src="../assets/sub_good_brand_logo.svg"
