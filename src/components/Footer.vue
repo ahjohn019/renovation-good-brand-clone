@@ -56,16 +56,16 @@
               />
             </a>
           </div>
-          <form class="mt-4 flex items-center">
+          <form class="mt-4 flex flex-col gap-3 sm:gap-0 sm:flex-row sm:items-center">
             <input
               type="tel"
               name="phone"
               placeholder="Phone Number"
-              class="flex-1 rounded-l-full border-0 bg-white px-5 py-2.5 text-sm text-black placeholder:text-gray-light focus:ring-2 focus:ring-orange focus:outline-none"
+              class="w-full min-w-0 rounded-full border-0 bg-white px-5 py-2.5 text-sm text-black placeholder:text-gray-light focus:ring-2 focus:ring-orange focus:outline-none sm:rounded-l-full sm:rounded-r-none"
             />
             <button
               type="submit"
-              class="rounded-r-full bg-black px-6 py-2.5 text-sm font-bold text-white transition-colors hover:bg-gray disabled:opacity-50"
+              class="w-full sm:w-auto rounded-full bg-black px-6 py-2.5 text-sm font-bold text-white transition-colors hover:bg-gray disabled:opacity-50 sm:rounded-l-none sm:rounded-r-full"
             >
               Submit
             </button>
