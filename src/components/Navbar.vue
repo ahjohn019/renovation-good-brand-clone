@@ -50,7 +50,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <nav class="sticky top-0 left-0 right-0 z-[1000] w-full bg-white shadow-sm">
+  <nav class="fixed top-0 left-0 right-0 z-[1000] w-full bg-white shadow-sm">
     <div class="flex h-16 items-center justify-between px-4 sm:px-6 lg:h-20">
       <div class="flex items-center">
         <span class="text-2xl font-bold text-gray-800">

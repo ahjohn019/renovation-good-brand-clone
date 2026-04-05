@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Navbar from './Navbar.vue'
 import VideoContainer from './VideoContainer.vue'
 import RenovationFeatures from './RenovationFeatures.vue'
 import Testimonal from './Testimonal.vue'
@@ -10,7 +9,6 @@ import whatsappIcon from '../assets/whatsapp_icon.svg'
 
 <template>
   <div class="w-full">
-    <Navbar />
     <VideoContainer />
     <RenovationFeatures />
     <Testimonal />

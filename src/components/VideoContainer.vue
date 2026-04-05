@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import videoSrc from '../assets/renovation_video.mp4'
 import QuoteButton from './QuoteButton.vue'
+import Navbar from './Navbar.vue'
 </script>
 
 <template>
   <div class="relative h-[100dvh] overflow-hidden">
+    <Navbar />
     <video
       :src="videoSrc"
       autoplay
